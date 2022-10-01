@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Transform camera;
+    public Transform cam;
     public TextMeshProUGUI XVal;
     public TextMeshProUGUI YVal;
     private float newX = 0;
@@ -26,12 +26,15 @@ public class PlayerMovement : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal") / 1000; //Value will be .0001 per frame
         float y = Input.GetAxisRaw("Vertical") / 1000;
-        newX = newX + x;
-        newY = newY + y;
+        newX = cam.position.x + x;
+        newY = cam.position.y + y;
+        
         Vector3 newPos = new Vector3(newX, newY, -10);
         cam.position = newPos;
 
-        //TO DO: Add component for display: X and Y Coordinates.
+        // Add component for display: X and Y Coordinates.
+        float outX = newX * 345f;
+        float outY = newY * 345f;
         if(Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical")){
             XVal.text = outX.ToString("F3");
             YVal.text = outY.ToString("F3");
