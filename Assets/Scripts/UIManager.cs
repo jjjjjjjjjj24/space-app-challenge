@@ -8,7 +8,8 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        loadingScreen.SetActive(false);
+        if (loadingScreen != null)
+            loadingScreen.SetActive(false);
 
         // Subscribe the LoadingScreen() to the delegate on GameManager
         GameManager.Instance.onLoadScenesCallback += LoadingScreen;
@@ -16,6 +17,20 @@ public class UIManager : MonoBehaviour
     
     private void LoadingScreen()
     {
-        loadingScreen.SetActive(true);
+        if (loadingScreen != null)
+            loadingScreen.SetActive(true);
+    }
+
+    public IEnumerator UIZoomIn(RectTransform transform, float speed)
+    {
+        // Store the original transform
+        Vector3 orig = transform.localScale;
+
+        transform.localScale = new Vector3(0, 0, 1);
+        while (transform.localScale.sqrMagnitude < orig.sqrMagnitude)
+        {
+            transform.localScale = Vector3.MoveTowards(transform.localScale, orig, Time.deltaTime * speed);
+            yield return null;
+        }
     }
 }

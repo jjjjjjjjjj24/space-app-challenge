@@ -42,12 +42,13 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void UnloadThisScene()
+    {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+    }
+
     public void UnloadSceneAsync(string name)
     {
-        // Calls all subscribed functions to the delegate
-        if (onLoadScenesCallback != null)
-            onLoadScenesCallback.Invoke();
-
         SceneManager.UnloadSceneAsync(name);
     }
 
