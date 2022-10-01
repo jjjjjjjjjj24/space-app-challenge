@@ -8,9 +8,7 @@ public class SpaceObject : MonoBehaviour
     private SpaceObjectDisplay display;
 
     [Header("Info")]
-    public string objectName;
-    public string description;
-    public Sprite image;
+    public SpaceObjectData data;
 
     private void Awake()
     {
@@ -32,11 +30,11 @@ public class SpaceObject : MonoBehaviour
     // When the object is clicked
     private void OnMouseDown()
     {
-        Debug.Log("Clicked: " + objectName);
+        Debug.Log("Clicked: " + data.header);
         if (display != null)
         {
             display.gameObject.SetActive(true);
-            display.DisplayDescription(objectName, description, image);
+            display.DisplayDescription(data.header, data.body, data.image);
         }
     }
 }
