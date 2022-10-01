@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform cam;
     public TextMeshProUGUI XVal;
     public TextMeshProUGUI YVal;
+    public float playerSpeed;
     private float newX = 0;
     private float newY = 0;
 
@@ -24,8 +25,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal") / 1000; //Value will be .0001 per frame
-        float y = Input.GetAxisRaw("Vertical") / 1000;
+        float x = Input.GetAxisRaw("Horizontal") * playerSpeed * Time.deltaTime; //Value will be .0001 per frame
+        float y = Input.GetAxisRaw("Vertical") * playerSpeed * Time.deltaTime;
         newX = cam.position.x + x;
         newY = cam.position.y - y;
         

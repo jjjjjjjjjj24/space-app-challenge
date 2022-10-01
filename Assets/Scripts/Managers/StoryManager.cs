@@ -12,8 +12,8 @@ public class StoryManager : MonoBehaviour
     public GameObject storyUI;
 
     // Intro UI
-    [Header("Intro UI")]
-    public GameObject intro;
+    [Header("Display UI")]
+    public GameObject storyDisplayUI;
     public float speed = 1;
     private RectTransform introTransform;
 
@@ -33,9 +33,11 @@ public class StoryManager : MonoBehaviour
         // References
         uiManager = GameObject.FindObjectOfType<UIManager>();
 
-        intro.SetActive(true);
-        if (intro != null)
-            introTransform = intro.GetComponent<RectTransform>();
+        if (storyDisplayUI != null)
+        {
+            storyDisplayUI.SetActive(true);
+            introTransform = storyDisplayUI.GetComponent<RectTransform>();
+        }
     }
 
     private void Start()
@@ -81,6 +83,16 @@ public class StoryManager : MonoBehaviour
             }
 
             hasFoundAllParts = true;
+        }
+
+        #endregion
+
+        #region When Player Found all parts
+
+        // If found all parts load ending scene
+        if (hasFoundAllParts == true)
+        {
+            GameManager.Instance.LoadSceneAsync("Ending");
         }
 
         #endregion

@@ -11,5 +11,5 @@ public class SpaceObjectData : ScriptableObject
     public string body;
 
     [Header("Image carried")]
-    public Sprite imageCarried;
+    public Sprite[] capturedImages;
 }

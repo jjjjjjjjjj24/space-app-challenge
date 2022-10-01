@@ -9,20 +9,25 @@ public class SpaceObject : MonoBehaviour
 
     public GameObject UIDisplay;
     private SpaceObjectDisplay display;
+    private SpriteRenderer spriteRenderer;
 
     [Header("Info")]
     public SpaceObjectData data;
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         storyManager = GameObject.FindObjectOfType<StoryManager>();
-        display = UIDisplay?.GetComponent<SpaceObjectDisplay>();
+
+        if (UIDisplay != null)
+            display = UIDisplay.GetComponent<SpaceObjectDisplay>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (data != null)
+            spriteRenderer.sprite = data.image;
     }
 
     // Update is called once per frame
