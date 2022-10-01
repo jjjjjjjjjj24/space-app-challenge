@@ -35,10 +35,13 @@ public class PlayerMovement : MonoBehaviour
         // Add component for display: X and Y Coordinates.
         float outX = newX * 345f;
         float outY = newY * 345f;
-        if(Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical")){
+
+        if (XVal != null && YVal != null)
+        {
             XVal.text = outX.ToString("F3");
             YVal.text = outY.ToString("F3");
         }
-            // Debug.Log(string.Format("Current Position: {0}, {1}", outX.ToString(), outY.ToString()));
+        
+        // Debug.Log(string.Format("Current Position: {0}, {1}", outX.ToString(), outY.ToString()));
     }
 }
