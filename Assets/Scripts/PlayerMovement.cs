@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Transform camera;
+    public Transform cam;
     private float newX = 0;
     private float newY = 0;
+
     void Awake(){
 
     }
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         newX = newX + x;
         newY = newY + y;
         Vector3 newPos = new Vector3(newX, newY, -10);
-        camera.position = newPos;
+        cam.position = newPos;
         float outX = newX * 637; //X value to be released on output: With random multiplier
         float outY = newY * 483; //Y value to be released on output: With random multiplier
 
