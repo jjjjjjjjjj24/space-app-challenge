@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class SpaceObject : MonoBehaviour
 {
-    public GameObject display;
+    public GameObject UIDisplay;
+    private SpaceObjectDisplay display;
 
     [Header("Info")]
     public string objectName;
     public string description;
     public Sprite image;
+
+    private void Awake()
+    {
+        display = UIDisplay?.GetComponent<SpaceObjectDisplay>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +32,11 @@ public class SpaceObject : MonoBehaviour
     // When the object is clicked
     private void OnMouseDown()
     {
-        Debug.Log("Name: " + objectName);
+        Debug.Log("Clicked: " + objectName);
+        if (display != null)
+        {
+            display.gameObject.SetActive(true);
+            display.DisplayDescription(objectName, description, image);
+        }
     }
 }
