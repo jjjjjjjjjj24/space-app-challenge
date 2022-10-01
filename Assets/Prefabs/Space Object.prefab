@@ -45,10 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8410f2576eb7f304b9f6700d6cb15685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 0}
-  objectName: Telescope
-  description: 
-  image: {fileID: 0}
+  UIDisplay: {fileID: 0}
+  data: {fileID: 11400000, guid: e7137620bf3f8894394c50a431a892fc, type: 2}
 --- !u!212 &8480108679259547355
 SpriteRenderer:
   m_ObjectHideFlags: 0

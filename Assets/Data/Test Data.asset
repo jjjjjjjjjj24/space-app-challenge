@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Test Data
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b49652796763a9549b884fce6f362c10, type: 3}
-  header: Test Telescope Title
+  header: Primary Mirror
   body: Lorem ipsum eh paano kung...
   imageCarried: {fileID: 0}

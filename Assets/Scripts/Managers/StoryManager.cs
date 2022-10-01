@@ -17,6 +17,17 @@ public class StoryManager : MonoBehaviour
     public float speed = 1;
     private RectTransform introTransform;
 
+    [Header("Parts to Find")]
+    public Parts[] parts;
+    public bool hasFoundAllParts = false;
+
+    [System.Serializable]
+    public class Parts
+    {
+        public string name;
+        public bool hasFound;
+    }
+
     private void Awake()
     {
         // References
@@ -38,11 +49,56 @@ public class StoryManager : MonoBehaviour
 
     private void Update()
     {
+        #region Story UI
+
         // Disable Story UI when pressed space
         if (storyUI.activeSelf == true)
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 storyUI.SetActive(false);
+        }
+
+        #endregion
+
+        #region Parts
+
+        // Check if any parts is found
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (parts[i].hasFound == true)
+            {
+                // Disable game object
+            }
+        }
+
+        // Check if all parts are found
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (parts[i].hasFound == false)
+            {
+                hasFoundAllParts = false;
+                break;
+            }
+
+            hasFoundAllParts = true;
+        }
+
+        #endregion
+    }
+
+    public void HasFoundPart(GameObject gameObject, SpaceObjectData data)
+    {
+        // Check in the list that the part has been found
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (parts[i].name == data.header)
+            {
+                // Check the bool of the part found
+                parts[i].hasFound = true;
+
+                // Disable gameobject
+                Destroy(gameObject);
+            }
         }
     }
 }
