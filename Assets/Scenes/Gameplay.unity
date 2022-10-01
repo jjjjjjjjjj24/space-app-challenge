@@ -470,7 +470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &822727814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -924,6 +924,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 68726932}
     m_Modifications:
+    - target: {fileID: 5512558053551490805, guid: ce89860b722b0f945b33e49c523c4f03, type: 3}
+      propertyPath: forwardScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512558053551490805, guid: ce89860b722b0f945b33e49c523c4f03, type: 3}
+      propertyPath: forwardScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512558053551490805, guid: ce89860b722b0f945b33e49c523c4f03, type: 3}
+      propertyPath: backwardScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512558053551490805, guid: ce89860b722b0f945b33e49c523c4f03, type: 3}
+      propertyPath: backwardScale.y
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5512558054346247000, guid: ce89860b722b0f945b33e49c523c4f03, type: 3}
       propertyPath: m_Name
       value: Player's HUD

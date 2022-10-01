@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal") / 1000; //Value will be .0001 per frame
         float y = Input.GetAxisRaw("Vertical") / 1000;
         newX = cam.position.x + x;
-        newY = cam.position.y + y;
+        newY = cam.position.y - y;
         
         Vector3 newPos = new Vector3(newX, newY, -10);
         cam.position = newPos;
