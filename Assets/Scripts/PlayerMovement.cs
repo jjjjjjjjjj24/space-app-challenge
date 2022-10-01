@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Transform camera;
+    public TextMeshProUGUI XVal;
+    public TextMeshProUGUI YVal;
     private float newX = 0;
     private float newY = 0;
-    void Awake(){
+
+    void Awake()
+    {
 
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -29,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
         float outY = newY * 483; //Y value to be released on output: With random multiplier
 
         //TO DO: Add component for display: X and Y Coordinates.
-        if(Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical"))
-            Debug.Log(string.Format("Current Position: {0}, {1}", outX.ToString(), outY.ToString()));       
+        if(Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical")){
+            XVal.text = outX.ToString("F3");
+            YVal.text = outY.ToString("F3");
+        }
+            // Debug.Log(string.Format("Current Position: {0}, {1}", outX.ToString(), outY.ToString()));       
     }
 }
