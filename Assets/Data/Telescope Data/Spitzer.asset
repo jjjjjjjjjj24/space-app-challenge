@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8b6488a8b0ab3498b1abb80698a338, type: 3}
-  m_Name: Parts (8)
+  m_Name: Spitzer
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7ea8233368eb9fd4b9884840b7a0d89f, type: 3}
-  header: Star Trackers
+  type: 1
+  image: {fileID: 21300000, guid: 917dd267fa3854e44a0098833b2bd44a, type: 3}
+  header: Spitzer Space Telescope
   body: 
   capturedImages: []

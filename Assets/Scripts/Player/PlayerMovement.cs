@@ -34,13 +34,13 @@ public class PlayerMovement : MonoBehaviour
         cam.position = newPos;
 
         // Add component for display: X and Y Coordinates.
-        float outX = newX * 345f;
-        float outY = newY * 345f;
+        float outX = newX * 125f;
+        float outY = newY * 125f;
 
         if (XVal != null && YVal != null)
         {
-            XVal.text = outX.ToString("F3");
-            YVal.text = outY.ToString("F3");
+            XVal.text = outX.ToString("F2");
+            YVal.text = outY.ToString("F2");
         }
         
         // Debug.Log(string.Format("Current Position: {0}, {1}", outX.ToString(), outY.ToString()));

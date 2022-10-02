@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8b6488a8b0ab3498b1abb80698a338, type: 3}
-  m_Name: Telescopes
+  m_Name: Star Trackers
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 10fc0bddb2251274aa2baf0fe86da669, type: 3}
-  header: Extremely Large Telescopes
+  image: {fileID: 21300000, guid: 7ea8233368eb9fd4b9884840b7a0d89f, type: 3}
+  header: Star Trackers
   body: 
   capturedImages: []

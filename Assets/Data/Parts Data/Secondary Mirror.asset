@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8b6488a8b0ab3498b1abb80698a338, type: 3}
-  m_Name: Parts (4)
+  m_Name: Secondary Mirror
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: eb1333c42521c2145848c5299abd0c40, type: 3}
-  header: Primary Mirror
+  image: {fileID: 21300000, guid: 15f160a50cf4f644882f6cf9dfc09bc8, type: 3}
+  header: Secondary Mirror
   body: 
   capturedImages: []

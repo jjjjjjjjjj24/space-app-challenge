@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Space Object")]
 public class SpaceObjectData : ScriptableObject
 {
+    [Header("Object Type")]
+    public ObjectType type;
+
     [Header("Object Description")]
     public Sprite image;
     public string header;
@@ -12,4 +15,10 @@ public class SpaceObjectData : ScriptableObject
 
     [Header("Image carried")]
     public Sprite[] capturedImages;
+}
+
+public enum ObjectType
+{
+    Part,
+    Telescope
 }
