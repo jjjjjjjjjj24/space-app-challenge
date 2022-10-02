@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: f220b860e19753441a1257eb5a3c8514, type: 3}
   header: Momentum Flap
-  body: 
+  body: In a similar manner to a trim flap in sailing, the momentum flap balances
+    the solar pressure on the sunshield. Although it can be adjusted on the ground,
+    it cannot be adjusted while in orbit.
   capturedImages: []

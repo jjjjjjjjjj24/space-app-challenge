@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b7c958a6e195e664b9b3c7b0b215c395, type: 3}
   header: Hubble Telescope
-  body: 
+  body: The weather on planets in our solar system and the formation of planets around
+    distant stars have both been studied by Hubble. It has studied the makeup of
+    the atmospheres of these extrasolar planets, sometimes known as "exoplanets,"
+    and may have taken one of the first pictures of one of these worlds in visible
+    light.
   capturedImages: []

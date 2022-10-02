@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 02a0dc5a4eddde84ab1b4e0d57a04101, type: 3}
   header: Sunshield
-  body: 
+  body: The sunshield divides the observatory into a cool side and a warm, sun-facing
+    side (thermal simulations indicate that the outermost layer's maximum temperature
+    is 383K, or around 230 degrees F) (with the coldest layer having a modeled minimum
+    temp of 36K or around -394 degrees F). The sensitive telescope equipment is protected
+    from solar interference by the five-layer sunshield.
   capturedImages: []

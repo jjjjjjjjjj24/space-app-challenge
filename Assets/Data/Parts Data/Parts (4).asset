@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: eb1333c42521c2145848c5299abd0c40, type: 3}
   header: Primary Mirror
-  body: 
+  body: 'In terms of collecting area, the primary mirror can be compared to a "light
+    bucket" whose power depends on its size (the total amount of area that reflects
+    light onto the secondary mirror). It has four scientific equipment to carry out
+    its ambitious science operations, a huge sunshield to keep the telescope cool,
+    and it is utilized to gather infrared light. '
   capturedImages: []

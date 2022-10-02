@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b1a2cbe2724fb9641afaa58399a7a23c, type: 3}
   header: Solar and Heliospheric Observatory
-  body: 
+  body: The joint NASA-ESA Solar & Heliospheric Observatory project, or SOHO, was
+    launched in December 1995 with the goal of studying the Sun from the inside out,
+    including its internal composition, its thick outer atmosphere, and the solar
+    wind that it blows throughout the solar system.
   capturedImages: []

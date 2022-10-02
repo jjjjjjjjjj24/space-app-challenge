@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 917dd267fa3854e44a0098833b2bd44a, type: 3}
   header: Spitzer Space Telescope
-  body: 
+  body: The 2003 launch of the Spitzer Space Telescope is intended to examine the
+    early universe in infrared light (unlike Hubble, which mostly observes in visible
+    light). Spitzer has made significant discoveries regarding comets, stars, exoplanets,
+    and distant galaxies. It was the first telescope to detect light from a planet
+    outside of our solar system.
   capturedImages: []

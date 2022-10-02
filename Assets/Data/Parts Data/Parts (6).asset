@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 94e2601f3669f8149a9bc03bfa7572ce, type: 3}
   header: Solar Array
-  body: 
+  body: To convert sunlight into electricity and run the observatory, the solar array
+    is always pointed toward the sun.
   capturedImages: []

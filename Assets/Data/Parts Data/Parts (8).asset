@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 7ea8233368eb9fd4b9884840b7a0d89f, type: 3}
   header: Star Trackers
-  body: 
+  body: Small telescopes called star trackers are used to focus on the observatory
+    using patterns in the stars.
   capturedImages: []

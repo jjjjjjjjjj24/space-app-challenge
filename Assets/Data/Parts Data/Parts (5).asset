@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 15f160a50cf4f644882f6cf9dfc09bc8, type: 3}
   header: Secondary Mirror
-  body: 
+  body: The secondary mirror directs the sunlight from the primary mirror into the
+    scientific instruments where it is recorded.
   capturedImages: []
