@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8b6488a8b0ab3498b1abb80698a338, type: 3}
-  m_Name: Parts (5)
+  m_Name: Integrated Science Instrument Module (ISIM)
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 15f160a50cf4f644882f6cf9dfc09bc8, type: 3}
-  header: Secondary Mirror
-  body: The secondary mirror directs the sunlight from the primary mirror into the
-    scientific instruments where it is recorded.
+  image: {fileID: 21300000, guid: f4fead626714eee40af9c0f1c45e8b32, type: 3}
+  header: Integrated Science Instrument Module (ISIM)
+  body: Webb's cameras and equipment are in the Integrated Science Instrument Module(ISIM).
+    One payload contains multiple subsystems and four main instruments.
   capturedImages: []

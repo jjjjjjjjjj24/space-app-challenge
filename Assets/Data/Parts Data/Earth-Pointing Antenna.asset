@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8b6488a8b0ab3498b1abb80698a338, type: 3}
-  m_Name: Parts (6)
+  m_Name: Earth-Pointing Antenna
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 94e2601f3669f8149a9bc03bfa7572ce, type: 3}
-  header: Solar Array
-  body: To convert sunlight into electricity and run the observatory, the solar array
-    is always pointed toward the sun.
+  image: {fileID: 21300000, guid: 037542777ed505e4c836206a023b8c5a, type: 3}
+  header: Earth-Pointing Antenna
+  body: The Earth-pointing antenna receives instructions from NASA's Deep Space Network
+    and transmits scientific data back to the planet.
   capturedImages: []

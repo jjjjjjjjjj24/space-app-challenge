@@ -21,6 +21,9 @@ public class StoryManager : MonoBehaviour
     public Parts[] parts;
     public bool hasFoundAllParts = false;
 
+    [Header("Object Description")]
+    public GameObject objectDescriptionUI;
+
     [System.Serializable]
     public class Parts
     {
@@ -92,7 +95,9 @@ public class StoryManager : MonoBehaviour
         // If found all parts load ending scene
         if (hasFoundAllParts == true)
         {
-            GameManager.Instance.LoadSceneAsync("Ending");
+            // Check if the player closed all the ui
+            if (objectDescriptionUI.activeSelf == false)
+                GameManager.Instance.LoadSceneAsync("Ending");
         }
 
         #endregion

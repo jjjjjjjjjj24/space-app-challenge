@@ -42,7 +42,7 @@ public class SpaceObject : MonoBehaviour
         if (display != null)
         {
             display.gameObject.SetActive(true);
-            display.DisplayDescription(data.header, data.body, data.image);
+            display.DisplayDescription(data);
         }
 
         if (storyManager != null)

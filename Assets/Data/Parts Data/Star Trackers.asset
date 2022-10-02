@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8b6488a8b0ab3498b1abb80698a338, type: 3}
-  m_Name: Parts (2)
+  m_Name: Star Trackers
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: f4fead626714eee40af9c0f1c45e8b32, type: 3}
-  header: Integrated Science Instrument Module (ISIM)
-  body: Webb's cameras and equipment are in the Integrated Science Instrument Module(ISIM).
-    One payload contains multiple subsystems and four main instruments.
+  image: {fileID: 21300000, guid: 7ea8233368eb9fd4b9884840b7a0d89f, type: 3}
+  header: Star Trackers
+  body: Small telescopes called star trackers are used to focus on the observatory
+    using patterns in the stars.
   capturedImages: []
